@@ -19,7 +19,10 @@
 		<?php if ( have_posts() ) : ?>
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<a href="<?php the_permalink(); ?>"><h2><?php echo the_title(); ?></h2></a>
+				<div class="span8 uk-blogpost">
+					<a href="<?php the_permalink(); ?>"><h2><?php echo the_title(); ?></h2></a>
+					<p><?php echo the_excerpt(); ?></p>
+				</div>
 			<?php endwhile; ?>
 		<?php endif; ?>
 <?php get_footer(); ?>

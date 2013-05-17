@@ -23,6 +23,12 @@ body {
 	font: 16px/1.125em "Noto Serif", serif;
 }
 
+/* ! Container
+======================== */
+.container {
+	margin-top: 20px;
+}
+
 /* ! Typography
 ======================== */
 
@@ -43,6 +49,10 @@ p {
 /* ! Header
 ======================== */
 
+header {
+	border-bottom: 2px solid #ddd;
+}
+
 .uk-menu {
 	list-style: none;
 }
@@ -55,6 +65,63 @@ p {
 	list-style: none;
 }
 
+
+/* ! FRONTPAGE
+======================== */
+
+.uk-blogpost {
+	border-bottom: 2px solid #ddd;
+}
+
+/* ! Single View
+======================== */
+.uk-postmeta {
+	border-top: 2px solid #ddd;
+	font-size: 0.8em;
+}
+
+/* ! Projekt arkiv
+======================== */
+
+.uk-projekt {
+	border-bottom: 2px solid #ddd;
+}
+
+.uk-projekt-medlemmar {
+	margin: 0;
+	list-style: none;
+}
+
+.uk-projekt-medlemmar-medlem {
+	margin: 10px;
+}
+
+
+/* ! Kommentar
+======================== */
+.comment-list {
+	margin-left: 0;
+}
+
+.comment-list li {
+	list-style: none;
+	margin-left: 0;
+}
+
+.uk-comment {
+	margin: 20px 0;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ddd;
+}
+
+.uk-comment-body {
+	margin: 10px 0;
+}
+
+.uk-comment-meta,
+.uk-comment-reply {
+	font-size: 0.8em;
+}
 
 /* ! HELPERS
 ======================== */

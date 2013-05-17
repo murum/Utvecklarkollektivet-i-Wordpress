@@ -40,13 +40,11 @@ $html_class = ( is_admin_bar_showing() ) ? 'wp-toolbar' : '';
 
 <body <?php body_class(); ?>>
 	<div class="container">
-		<div class="row">
-			<header class="span4">
-					<a href="<?php echo home_url(); ?>"><img class="uk-logo align-left" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Utvecklarkollektivet" width="200" height= "199" /></a>
-			</header>
+		<header class="row-fluid">
+			<a class="span4" href="<?php echo home_url(); ?>"><img class="uk-logo align-left" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="Utvecklarkollektivet" width="200" height= "199" /></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'main-nav', 'container' => '', 'menu_class' => 'nav-menu offset1 span5 uk-menu' ) ); ?>
 			<ul class="span2 uk-meta">
 				<li><?php echo wp_loginout(); ?></li>
 			</ul>
-		</div>
+		</header>
 		<div id="main" class="site-main">
